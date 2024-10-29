@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arey suno na?!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./milk-and-mocha-2.gif" alt="Centered GIF" class="gif">
+        <p class="message">Plzz chal lo na yarr</p>
+        <div class="button-container">
+            <div class="button-container">
+                <a href="forth.html" class="btn" >Nahi</a>
+                <a href="abort.html" class="btn" >Haa</a>
+            </div>
+        </div>
+    </div>
+    <audio autoplay loop id="backgroundMusic">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <script>
+        // Function to play audio
+        function playAudio() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play().catch(function(error) {
+                console.log('Audio playback failed:', error); // Log any errors
+            });
+        }
+
+        // Automatically play audio when the window loads
+        window.onload = playAudio;
+    </script>
+</body>
+</html>

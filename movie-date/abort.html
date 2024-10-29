@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arey suno na?!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./milk-and-mocha.gif" alt="Centered GIF" class="gif">
+        <p class="message">Okay ,ticket lete ana, Melite he</p>
+    </div>
+    <audio autoplay loop id="backgroundMusic">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <script>
+        // Function to play audio
+        function playAudio() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play().catch(function(error) {
+                console.log('Audio playback failed:', error); // Log any errors
+            });
+        }
+
+        // Automatically play audio when the window loads
+        window.onload = playAudio;
+    </script>
+</body>
+</html>
