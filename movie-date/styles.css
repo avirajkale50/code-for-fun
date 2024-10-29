@@ -49,3 +49,23 @@ body {
 audio{
     display: none;
 }
+
+  /* Custom button styling */
+  #uniqueBottomRightButton {
+    font-family: "Pacifico", cursive;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #06004e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #uniqueBottomRightButton:hover {
+    background-color: #0fffef;
+    color: black;
+  }
