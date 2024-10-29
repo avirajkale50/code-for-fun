@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    font-family: "Pacifico", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%); /* Optional background color */
+}
+
+.container {
+    text-align: center; /* Center text below the GIF */
+}
+
+.gif {
+    max-width: 100%; /* Responsive GIF size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.message {
+    margin-top: 10px; /* Space between GIF and message */
+    font-size: 3em; /* Adjust font size as needed */
+    color: #333; /* Optional text color */
+}
+
+.button-container {
+    margin-top: 20px; /* Space between message and buttons */
+}
+
+.btn {
+    font-family: "Pacifico", cursive;
+    background: radial-gradient(859px at 7.5% 18%, rgb(234, 6, 185) 4.2%, rgb(251, 179, 8) 92.7%);
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Button padding */
+    font-size: 2em; /* Button font size */
+    cursor: pointer; /* Change cursor on hover */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* Allow positioning with top and left */
+    transition: top 0.2s, left 0.2s; /* Smooth transition */
+}
+
+.btn:hover {
+    background: radial-gradient(859px at 7.5% 18%, rgb(255, 93, 56) 4.2%, rgb(251, 239, 8) 92.7%); /* Darker shade on hover */
+}
+audio{
+    display: none;
+}
